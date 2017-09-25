@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="blockly_compressed.js"></script>
+<script src="blocks_compressed.js"></script>
+<script src="javascript.js"></script>
+<script src="myBlocks.js"></script>
+<script src="Main.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body onload="start()" onresize="resize()" onscroll="resize()">
+
+<div id="bot">
+<img id="botpic" src="Images/bot1.gif"/>
+</div>
+
+<div id="left">
+<div id="leftstuff">
+<p id="leveldisplay"></p>
+<p id="instruct"></p>
+</div>
+<div id="leftstuff2">
+<button id="go" onclick="run()">Go!</button>
+</div>
+<div id="blocklyDiv"></div>
+</div>
+
+<xml id="toolbox" style="display: none">
+  <block type="water_flower"></block>
+  <block type="next_flower"></block>
+</xml>
+
+<div id="right">
+<table id="table">
+</table>
+</div>
+	
+<button id="menu" onclick="showMenu()"><strong>Menu<strong></button>
+<div id="levels"></div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+/*Contains all styling code, as well as responsive elements and the animation for when you hit a rock*/
+
+.maintable {
+border: 10px solid green;
+background-image:url("Images/back1.gif");
+width:100px;
+height:100px;
+text-align:center;
+}
+
+body {
+	background-color:rgb(180, 240, 211);
+	background-image:url('Images/back2.gif');
+	background-attachment: fixed;
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	font-family: "Tahoma";
+	min-width:1000px;
+	height:500px;
+	overflow-x:scroll;
+	overflow-y:scroll;
+}
+
+#right {
+	width:40%;
+	min-width:400px;
+	z-index:0;
+	margin-top:100px;
+	float:left;
+}
+
+#left {
+	width:40%;
+	min-width:400px;
+	min-height:500px;
+	float:left;
+	padding:20px;
+	margin:10px 100px 10px 10px;
+	background-image:url("Images/back1.gif");
+	border: 10px solid green;
+	border-radius: 20px;
+	overflow:auto;
+	overflow-x:auto;
+	overflow-y:visible;
+}
+
+#leftstuff {
+	width: -webkit-calc(100% - 150px);
+    width:    -moz-calc(100% - 150px);
+    width:         calc(100% - 150px);
+	float:left;
+}
+
+#leftstuff2 {
+	float:left;
+}
+
+#blocklyDiv {
+	width:100%;
+	float:left;
+	height:450px;
+}
+
+#bot {
+	position:fixed;
+	z-index:1;
+}
+
+#go {
+	background-color: rgb(180, 240, 211);
+	width:100px;
+	height:60px;
+	border:none;
+	font-size: 24pt;
+	margin:20px;
+	position:relative;
+	z-index:5;
+}
+
+#menu {
+	border:none;
+	font-size: 24pt;
+	color:#153c7c;
+	padding:4px;
+	position:fixed;
+	right:30px;
+	bottom:30px;
+	width:100px;
+	height:100px;
+	background-image:url('Images/sun.gif');
+	background-position:center;
+	border: 5px solid #639fff;
+	text-align:center;
+	border-radius: 10px;
+}
+
+#levels {
+	visibility:hidden;
+	position:fixed;
+	right:30px;
+	bottom: 160px;
+	margin-bottom:20px;
+	background-image:url('Images/back3.gif');
+	border: 5px solid #639fff;
+	border-radius: 10px;
+}
+
+.levbut {
+	height: 50px;
+	width:50px;
+	border:none;
+	background-color:transparent;
+	font-weight:bold;
+	font-size:24pt;
+}
+
+#stagename {
+	font-size:12pt;
+}
+
+@-webkit-keyframes oopsie {
+	0% {-ms-transform: rotate(30deg);-ms-transform-origin:50% 100%;-webkit-transform:rotate(30deg);-webkit-transform-origin:50% 100%;transform:rotate(30deg);transform-origin:50% 100%}
+	50% {-ms-transform: rotate(-30deg);-ms-transform-origin:50% 100%;-webkit-transform:rotate(-30deg);-webkit-transform-origin:50% 100%;transform:rotate(-30deg);transform-origin:50% 100%}
+	100% {-ms-transform: rotate(30deg);-ms-transform-origin:50% 100%;-webkit-transform:rotate(30deg);-webkit-transform-origin:50% 100%;transform:rotate(30deg);transform-origin:50% 100%}
+}
